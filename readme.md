@@ -32,6 +32,7 @@ The previous step is likely to give clusters that are bigger than the maximum al
 
 We combine clusters that could be grouped together so that we have the maximum clusters with size=TABLE_SIZE_MAX
 
+### Notes
 
 Note (1): I am not sure whether k-modes at the beginning really plays a key role. It may be worthwhile to test without this step and starting with clusters made of couples only.
 
