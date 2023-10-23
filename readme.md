@@ -11,6 +11,7 @@ The data file is used to know people's names as well as their affinities. Weight
 Example:
 
 Paul is married to Lisa --> affinity 1
+
 Paul is in the same family as Greg --> affinity 2
 ...
 
