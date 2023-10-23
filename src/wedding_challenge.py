@@ -14,7 +14,7 @@ from kmodes.kmodes import KModes
 
 TABLE_SIZE_MAX = 5
 
-df = pd.read_csv('./affinities-test.csv', header=None)
+df = pd.read_csv('./../data/affinities.csv', header=None)
 poids = [int(x) for x in df.loc[0].values[2:-1]]
 columns = list(df.loc[1].values[2:-1])
 dict_poids = {}
@@ -332,7 +332,7 @@ for idx, cluster_name in enumerate(df_clusters_best_adjust['cluster'].unique()):
 
 #%%
 
-excel_writer = pd.ExcelWriter('table_proposals_test.xlsx', engine='xlsxwriter')
+excel_writer = pd.ExcelWriter('./../output/table_proposals_test.xlsx', engine='xlsxwriter')
 empty_rows = 3
 for index, df in enumerate(df_res[:3]):
     start_row = index * (df.shape[0] + empty_rows)
