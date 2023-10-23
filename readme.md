@@ -2,7 +2,7 @@
 
 When organizing a wedding, the tricky step is to decide who sits where. This algorithm aims to find a good combination taking affinities into account and without breaking couples.
 
-[image!clustering-schema.png]
+![Clustering for table attribution](https://github.com/savoga/wedding-challenge/blob/main/clustering-schema.png)
 
 ### 0- Data
 
