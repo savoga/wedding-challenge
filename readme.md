@@ -13,6 +13,7 @@ Example:
 Paul is married to Lisa --> affinity 1
 
 Paul is in the same family as Greg --> affinity 2
+
 ...
 
 ### 1- Preprocessing
@@ -33,10 +34,13 @@ We combine clusters that could be grouped together so that we have the maximum c
 
 
 Note (1): I am not sure whether k-modes at the beginning really plays a key role. It may be worthwhile to test without this step and starting with clusters made of couples only.
+
 Note (2): few things can be changed to "play" with the results and end up with different combinations:
 - random.seed(3): it seems changing the random generated strings can impact the clustering
 - n_run: number of runs in the very first clustering
 - k in range(1,20): we do only the last k combinations for the sake of speed; increasing this number could lead to different results
 - changing step "Sum to TABLE_SIZE_MAX-1" to, for example, "Sum to TABLE_SIZE_MAX-2" could also provide good results
+
 Note (3): there might be another method using the size as a constraint (maybe linear assignment?)
+
 Note (4): for perfect results, it may be good to do final adjustments manually (e.g. swaping couples)
